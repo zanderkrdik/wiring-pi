@@ -46,7 +46,7 @@ check_raspberry() {
     echo "Skipping wiring-pi core compilation."
     echo "================================================================================"
     echo ""
-    exit 1
+    exit 0
   fi
 }
 
@@ -84,7 +84,7 @@ cd ../../
 echo "done."
 
 cd ./wiringpi/gpio/
-echo -n "Unistalling gpio utility ... "
+echo -n "Uninstalling gpio utility ... "
 sudo make uninstall >> ../../install.log 2>&1
 echo "done."
 
