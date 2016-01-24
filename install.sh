@@ -36,6 +36,22 @@ check_git_clone() {
   fi
 }
 
+check_raspberry() {
+  if [[ $(uname -m) != *"arm"* ]]; then
+    echo "Not Supported: $(uname -m)"
+    echo "Needs to be 'arm'"
+    echo ""
+    echo "================================================================================"
+    echo "Warning: This system does not appear to be a Raspberry Pi."
+    echo "Skipping wiring-pi core compilation."
+    echo "================================================================================"
+    echo ""
+    exit 1
+  fi
+}
+
+check_raspberry
+
 rm ./install.log 2>/dev/null 1>&2
 
 echo -n "Cloning libWiringPi ... "
