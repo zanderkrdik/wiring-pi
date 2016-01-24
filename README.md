@@ -8,6 +8,7 @@ which was based on the awesome work of [Soarez](https://github.com/Soarez/node-w
 Improves the development environment for wiring-pi by introducing mocks for non-Pi systems.
 
 - This wrapper installs on non-Pi systems by skipping the wiring-pi (C language) portions and providing mocks for the wiring-pi (NodeJS) portion.
+- See below for list of implemented methods.
 
 ## Install
 
