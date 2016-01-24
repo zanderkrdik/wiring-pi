@@ -22,5 +22,15 @@ var wpi = require('wiring-pi');
 ```
 ## Documentation
 
-See the eugeneware [DOCUMENTATION.md](https://github.com/eugeneware/wiring-pi/blob/master/DOCUMENTATION.md) file for more detailed information.
+For full documentation, see the eugeneware [DOCUMENTATION.md](https://github.com/eugeneware/wiring-pi/blob/master/DOCUMENTATION.md) file.
+
+### Currently implemented methods
+
+#### Constants
+- OUTPUT (1)
+- INPUT (0)
+
+#### Core
+- setup(pin, mode)
+- digitalWrite(pin, value)
 
